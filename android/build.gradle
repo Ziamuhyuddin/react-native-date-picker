@@ -38,7 +38,10 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
     }
-
+    namespace "com.henninghall.date_picker"
+    buildFeatures {
+        buildConfig true
+    }
     sourceSets {
         main {
             if (isNewArchitectureEnabled()) {
